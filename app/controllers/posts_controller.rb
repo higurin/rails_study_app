@@ -1,8 +1,5 @@
 class PostsController < ApplicationController
   def index
-    @posts = [
-      "テキスト１",
-      "デキスト２"
-    ]
+    @posts = Post.all
   end
 end
