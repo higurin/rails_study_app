@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <header>
+      <ul>
+        <li><%= link_to("TOPページ","/") %></li>
+        <li><%= link_to("Aboutページ","/about") %></li>
+        <li><%= link_to("投稿一覧ページ","/posts/index") %></li>
+      </ul>
+    </header>
     <%= yield %>
   </body>
 </html>
