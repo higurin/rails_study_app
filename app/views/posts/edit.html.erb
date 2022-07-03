@@ -1,0 +1,8 @@
+<h1>投稿編集ページ</h1>
+
+<%= form_tag("/posts/#{@post.id}/update") do %>
+
+<textarea name="content" id="" cols="30" rows="10"><%= @post.content %></textarea>
+<input type="submit" value="保存">
+
+<% end %>
